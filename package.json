@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/hoomberto/thoth-api/issues"
   },
-  "homepage": "https://github.com/hoomberto/thoth-api#readme"
+  "homepage": "https://github.com/hoomberto/thoth-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
+  }
 }
