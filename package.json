@@ -1,0 +1,19 @@
+{
+  "name": "thothapi",
+  "version": "1.0.0",
+  "description": "An API for the Book of Thoth",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoomberto/thoth-api.git"
+  },
+  "author": "Bobby Vasquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoomberto/thoth-api/issues"
+  },
+  "homepage": "https://github.com/hoomberto/thoth-api#readme"
+}
