@@ -121,3 +121,15 @@ VALUES (65, 'minor', 'di01', 'Ace of Disks', 'ace', 1, 0, '["Satisfaction", "Joy
 (76, 'minor', 'di12', 'Prince of Disks', 'prince', 12, 0, '["Endurance", "Patience", "Carelessness", "Discouragement"]', 'The airy part of earth. An energetic young man. A capable manager and steadfast worker, competent, perhaps dull, somewhat skeptical of spirituality, slow to anger but implacable if aroused.', 'disks'),
 (77, 'minor', 'di13', 'Queen of Disks', 'queen', 13, 0, '["Vision", "Generosity", "Mistrust", "Fear"]', 'The watery part of earth. An ambitious woman, yet affectionate and kind, charming, timid, practical, quiet and domesticated. Influenced: Dull. Servile. Foolish. Capricious. Moody.', 'disks'),
 (78, 'minor', 'di14', 'Knight of Disks', 'knight', 14, 0, '["Valor", "Accomplishments", "Corruption", "Peril"]', 'The fiery part of earth. A farmer, patient, laborious and clever. Somewhat dull and preoccupied with material things. Influenced: Avaricious, surly, petty, jealous.', 'disks');
+
+
+-- Results --
+
+-- Very Positive Association --
+
+INSERT INTO results (result_id, tagline, result_choices, word_association, category)
+VALUES (1, 'The spirits are very much in your favor!', '["They are rejoicing ‘[keyword1] with [crypto1]’. Rejoice with them and invest!", "Does it get any better than this? [keyword1] with [crypto1] and [keyword2] with [crypto2].  Go play the lottery while you’’re at it!"]', '["Abundance", "Luck", "Courage", "Strength", "Achievement", "Fulfillment"]', 'very_positive'),
+(2, 'Are you about to make it big?', '["[keyword1] is in store with [crypto1]. The spirits are clearly on your side.", "The spirits suggest [keyword1] and [keyword2], mostly with matters involving [crypto1] and [crypto2]."]', '["Happiness", "Rewards", "Reward"]', 'very_positive'),
+(3, 'The spirits suggest great things are in store', '["[keyword1] with [crypto1] is the forecast for today.", "[crypto1] will result in [keyword1], [crypto2] in [keyword2]. Isn’’t that nice!"]', '["Satisfaction", "Success", "Joy", "Happiness"]', 'very_positive'),
+(4, 'You are crushing it!', '["[keyword1]? The spirits see you turning a new leaf over and are pleased. Invest in [crypto1], or any others really - you deserve it.", "The terms at play are [keyword1] and [keyword2]. To follow up your efforts, consider setting a little aside for either [crypto1] or [crypto2]."]', '["Abundance", "Luck", "Courage", "Strength", "Achievement", "Fulfillment"]', 'very_positive'),
+(5, 'The spirits suggest charity', '["The word of the day is [keyword1]. Instead of involving yourself with [crypto1], perhaps consider the card you’ve chosen and donate to your favorite cause.", "[keyword1] and [keyword2]? Forget [crypto1], [crypto2], etc. - spend your money supporting a good cause! You will accrue good karma."]', '["Generosity", "Charity"]', 'very_positive');
