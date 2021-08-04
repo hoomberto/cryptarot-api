@@ -11,7 +11,7 @@ CREATE TABLE deck(
     suit text NOT NULL
 );
 
-CREATE TABLE results(
+CREATE TABLE crypto_results(
     result_id SERIAL PRIMARY KEY,
     tagline text NOT NULL,
     result_choices json NOT NULL,
