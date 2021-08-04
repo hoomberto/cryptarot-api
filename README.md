@@ -1,1 +1,1 @@
-# thoth-api
+## CrypTarot API
