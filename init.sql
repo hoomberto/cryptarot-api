@@ -127,7 +127,7 @@ VALUES (65, 'minor', 'di01', 'Ace of Disks', 'ace', 1, 0, '["Satisfaction", "Joy
 
 -- Very Positive Association --
 
-INSERT INTO results (result_id, tagline, result_choices, word_association, category)
+INSERT INTO crypto_results (result_id, tagline, result_choices, word_association, category)
 VALUES (1, 'The spirits are very much in your favor!', '["They are rejoicing ‘[keyword1] with [crypto1]’. Rejoice with them and invest!", "Does it get any better than this? [keyword1] with [crypto1] and [keyword2] with [crypto2].  Go play the lottery while you’’re at it!"]', '["Abundance", "Luck", "Courage", "Strength", "Achievement", "Fulfillment"]', 'very_positive'),
 (2, 'Are you about to make it big?', '["[keyword1] is in store with [crypto1]. The spirits are clearly on your side.", "The spirits suggest [keyword1] and [keyword2], mostly with matters involving [crypto1] and [crypto2]."]', '["Happiness", "Rewards", "Reward"]', 'very_positive'),
 (3, 'The spirits suggest great things are in store', '["[keyword1] with [crypto1] is the forecast for today.", "[crypto1] will result in [keyword1], [crypto2] in [keyword2]. Isn’’t that nice!"]', '["Satisfaction", "Success", "Joy", "Happiness"]', 'very_positive'),
@@ -136,7 +136,7 @@ VALUES (1, 'The spirits are very much in your favor!', '["They are rejoicing ‘
 
 -- Positive Association --
 
-INSERT INTO results (result_id, tagline, result_choices, word_association, category)
+INSERT INTO crypto_results (result_id, tagline, result_choices, word_association, category)
 VALUES (6, 'Is this the start of something good?', '["[keyword1], specifically with [crypto1] suggests positive things could very well be involved.", "Either [keyword1] or [keyword2] will apply in full to either [crypto1] or [crypto2]."]', '["New beginnings", "Beginner''s luck", "New opportunity"]', 'positive'),
 (7, 'Manifest your intentions into reality', '["The spirits believe ‘[keyword1]’ sums up what’’s currently at play with [crypto1]. It seems to be a good thing!", "If you knew that spirits are associating [keyword1] and [keyword2] with both [crypto1] and [crypto2], would you invest in either? This seems to be the case."]', '["Determined", "Resourceful", "Hidden talents", "Enthusiasm", "Authority", "Power"]', 'positive'),
 (8, 'Take the time to learn more', '["[keyword1] with [crypto1] can only mean good things, according to the card you chose.", "[keyword1] and [keyword2] will bring positive change, either with [crypto1] or [crypto2]."]', '["Education", "Learning", "Commitment", "Ambition", "Overcoming obstacles", "News", "Information"]', 'positive'),
@@ -153,7 +153,7 @@ VALUES (6, 'Is this the start of something good?', '["[keyword1], specifically w
 
 -- Neutral Association --
 
-INSERT INTO results (result_id, tagline, result_choices, word_association, category)
+INSERT INTO crypto_results (result_id, tagline, result_choices, word_association, category)
 VALUES (18, 'There’s no telling what might happen', '["The spirits are forecasting [keyword1] to be involved with [crypto1] - keep this in mind!", "[crypto1] will involve [keyword1], whereas [crypto2] is directly tied to [keyword2]. The spirits refuse to reveal any more than this."]', '["Unexpected change", "Decision making"]', 'neutral'),
 (19, 'The scales are balanced', '["The spirits have the most minimal influence on [crypto1]. Pure chance and [keyword1] are involved right now.", "[keyword1] pertains to [crypto1], and [keyword2] with [crypto2]. The lack of spiritual influence is noteworthy - things could go either way."]', '["Equilibrium", "Balance"]', 'neutral'),
 (20, 'Not immediately noticeable', '["The theme of [keyword1] relates to [crypto1] right now. Maybe not now, but eventually results will show?", "[keyword1] and [keyword2] considered, maybe come back in a week to check up on [crypto1] and [crypto2]."]', '["Delayed endings", "Delayed success", "Endings"]', 'neutral'),
@@ -164,7 +164,7 @@ VALUES (18, 'There’s no telling what might happen', '["The spirits are forecas
 
 -- Negative Association --
 
-INSERT INTO results (result_id, tagline, result_choices, word_association, category)
+INSERT INTO crypto_results (result_id, tagline, result_choices, word_association, category)
 VALUES (25, 'Check in with your loved ones', '["The spirits don’t want to assume anything, but are they sensing [keyword1]? Forget [crypto1], the spirits are concerned for you!", "Reach out to someone close to you before messing with either [crypto1] or [crypto2]. With [keyword1] and [keyword2] at play, there are more important things to be dealing with."]', '["Rejection of family values", "Relationship issues", "Poor counsel", "Domestic problems"]', 'negative'),
 (26, 'Bad Luck!', '["[keyword1]! The spirits are clearly signaling to get away from [crypto1].", "[keyword1] and [keyword2]! If the spirits could lament any further against [crypto1] and [crypto2], a dresser might start hovering."]', '["Misfortune",  "Mishap"]', 'negative'),
 (27, 'Lots of obstacles', '["[keyword1] with [crypto1]. It might be rather inconvenient to deal with at this time.", "[crypto1]: [keyword1]. [crypto2]: [keyword2]. That’’s what’’s really going on here."]', '["Roadblocks", "Communication blocks"]', 'negative'),
@@ -183,7 +183,7 @@ VALUES (25, 'Check in with your loved ones', '["The spirits don’t want to assu
 
 -- Very Negative Association --
 
-INSERT INTO results (result_id, tagline, result_choices, word_association, category)
+INSERT INTO crypto_results (result_id, tagline, result_choices, word_association, category)
 VALUES (39, 'Avoid at all costs', '["The spirits are crying ‘[keyword1]’ in regard to [crypto1]. Either stay far away, or invest in some on behalf of an enemy.", "With [keyword1] and [keyword2] surrounding all matters involving both [crypto1] and [crypto2], maybe stay away, and light some sage for good measure."]', '["Peril", "Danger", "Disaster", "Ruin",  "Misfortune",  "Defeat", "Extreme unhappiness", "Despair"]', 'very_negative'),
 (40, 'Not worth the gamble', '["The card you chose seems to suggest [keyword1] to be at work with [crypto1]. It probably isn’’t worth it right now.", "Both [keyword1] and [keyword2] are at play with matters pertaining to [crypto1] and [crypto2]. This might not be the best time to be investing!"]', '["Instability", "Deviousness", "Chaos", "Fraud", "Volatile situation",  "False pride", "Gambling"]', 'very_negative'),
 (41, 'This might be too stressful', '["The spirits think [keyword1] to be at play when dealing with [crypto1]. Look within before proceeding, and you’’ll realize it might be worth passing on.", "[keyword1] + [keyword2] = the situation right now with [crypto1] and [crypto2]. Maybe pass on them for now!"]', '["Frustration", "Negativity",  "Misery", "Stress",  "Struggles"]', 'very_negative'),
