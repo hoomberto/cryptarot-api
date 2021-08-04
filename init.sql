@@ -160,7 +160,7 @@ VALUES (18, 'There’s no telling what might happen', '["The spirits are forecas
 (21, 'Things might go well for you', '["Prospects with [crypto1] are tied to this card right now, and it suggests [keyword1].", "[keyword1] and [keyword2] suggest the timing is right with both [crypto1] and [crypto2]."]', '["Limited success", "Advantage", "Boldness", "Profit"]', 'neutral'),
 (22, 'In your capacity to make the right decision', '["Considering this card suggests [keyword1], that aligns perfectly with [crypto1] at the moment.", "[keyword1] and [keyword2] describe the factors necessary to achieve results with [crypto1] or [crypto2]."]', '["Clear thinking", "Vision", "Insight", "Calm expression", "Contemplation", "Meditation", "Intuition", "Choices", "Introspection"]', 'neutral'),
 (23, 'Remain patient', '["The keyword involved with [crypto1] right now is [keyword1]. The spirits suggest keeping this in mind moving forward.", "[keyword1] and [keyword2] can only yield good results from [crypto1] and [crypto2]."]', '["Endurance", "Patience", "Metamorphosis"]', 'neutral'),
-(24, 'Wait a while and all shall be revealed', '["Specifically, [keyword1] with [crypto1]. The spirits think it’’s worth the wait.", "It’’s either [keyword1] with [crypto1] or [keyword2] with [crypto2]. Or vice-versa, only time will tell."]', '["Mysteries unveiled", "Redemption"]', 'neutral'),
+(24, 'Wait a while and all shall be revealed', '["Specifically, [keyword1] with [crypto1]. The spirits think it’’s worth the wait.", "It’’s either [keyword1] with [crypto1] or [keyword2] with [crypto2]. Or vice-versa, only time will tell."]', '["Mysteries unveiled", "Redemption"]', 'neutral');
 
 -- Negative Association --
 
