@@ -13,9 +13,10 @@ CREATE TABLE deck(
 
 CREATE TABLE results(
     result_id SERIAL PRIMARY KEY,
-    result text NOT NULL,
-    category text NOT NULL,
-    word_association json NOT NULL
+    tagline text NOT NULL,
+    result_choices json NOT NULL,
+    word_association json NOT NULL,
+    category text NOT NULL
 );
 
 -- Major Arcana --
@@ -75,7 +76,7 @@ VALUES (37, 'minor', 'cu01', 'Ace of Cups', 'ace', 1, 0, '["Growth", "Success", 
 (41, 'minor', 'cu05', 'Five of Cups', 'five', 5, -4, '["Bitterness", "Frustration", "Regret", "Loss"]', 'Disappointment. Unexpected disturbance. Misfortune. Heartache. Unkindness from friends. Betrayal. Resentment. Sadness. Regret.', 'cups'),
 (42, 'minor', 'cu06', 'Six of Cups', 'six', 6, 2, '["Happiness", "Rewards", "Nostalgia", "Delay"]', 'Pleasure. Well-being. Effortless harmony. Ease. Satisfaction. Happiness. Success. Fulfillment of sexual will. Beginnings of improvements. Presumptuous. Vain. Thankless.', 'cups'),
 (43, 'minor', 'cu07', 'Seven of Cups', 'seven', 7, 3, '["Ego", "Reflection", "Desire", "Success"]', 'Delusion. Illusory success. Drug addiction. Intoxication. Guilt. Lying. Deceit. Promises unfulfilled. Lust. Dissipation of love and friendship.', 'cups'),
-(44, 'minor', 'cu08', 'Eight of Cups', 'eight', 8, 0, '["Dissatisfaction", "Sadness", "Happiness", "Material Success"]', 'Indolence. Abandoned success. Declining interest. Temporary success. Instability. Misery. Transience which may lead away from material success.', 'cups'),
+(44, 'minor', 'cu08', 'Eight of Cups', 'eight', 8, 0, '["Dissatisfaction", "Sadness", "Happiness", "Material success"]', 'Indolence. Abandoned success. Declining interest. Temporary success. Instability. Misery. Transience which may lead away from material success.', 'cups'),
 (45, 'minor', 'cu09', 'Nine of Cups', 'nine', 9, 1, '["Victory", "Success", "Poor judgment", "Mistakes"]', 'Happiness. Complete success. Pleasure. Physical well-being. Vanity, conceit and overindulgence.', 'cups'),
 (46, 'minor', 'cua10', 'Ten of Cups', 'ten', 10, 0, '["Fulfillment", "Dreams", "False promises", "Upsets"]', 'Contenment. Pursuit of pleasure. Desired outcome. Success. Peacemaking. Generosity. Dissipation. Overindulgence. Pity. Waste. Stagnation.', 'cups'),
 (47, 'minor', 'cu11', 'Princess of Cups', 'princess', 11, 0, '["News", "Information", "Deception", "Attachment"]', 'The earthy part of water. A young woman, infinitely gracious, sweet, voluptuous, gentle, kind, romantic, and dreamy. Indolent, selfish, and luxurious.', 'cups'),
@@ -119,4 +120,4 @@ VALUES (65, 'minor', 'di01', 'Ace of Disks', 'ace', 1, 0, '["Satisfaction", "Joy
 (75, 'minor', 'di11', 'Princess of Disks', 'princess', 11, 0, '["Reflection", "News", "Concern", "Disappointments"]', 'The earthy part of earth. A young woman, beautiful and strong, pregnant with life. She is generous, kind, diligent, and benevolent. Influenced: Wasteful and at war with her essential dignity.', 'disks'),
 (76, 'minor', 'di12', 'Prince of Disks', 'prince', 12, 0, '["Endurance", "Patience", "Carelessness", "Discouragement"]', 'The airy part of earth. An energetic young man. A capable manager and steadfast worker, competent, perhaps dull, somewhat skeptical of spirituality, slow to anger but implacable if aroused.', 'disks'),
 (77, 'minor', 'di13', 'Queen of Disks', 'queen', 13, 0, '["Vision", "Generosity", "Mistrust", "Fear"]', 'The watery part of earth. An ambitious woman, yet affectionate and kind, charming, timid, practical, quiet and domesticated. Influenced: Dull. Servile. Foolish. Capricious. Moody.', 'disks'),
-(78, 'minor', 'di14', 'Knight of Disks', 'knight', 14, 0, '["Valour", "Accomplishments", "Corruption", "Peril"]', 'The fiery part of earth. A farmer, patient, laborious and clever. Somewhat dull and preoccupied with material things. Influenced: Avaricious, surly, petty, jealous.', 'disks');
+(78, 'minor', 'di14', 'Knight of Disks', 'knight', 14, 0, '["Valor", "Accomplishments", "Corruption", "Peril"]', 'The fiery part of earth. A farmer, patient, laborious and clever. Somewhat dull and preoccupied with material things. Influenced: Avaricious, surly, petty, jealous.', 'disks');
