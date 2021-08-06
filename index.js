@@ -1,11 +1,30 @@
 const express = require('express')
 const cors = require('cors')
 const {pool} = require('./config')
+const dayjs = require('dayjs')
 
 const app = express()
 app.locals.title = "Book of Thoth API"
 app.set('port', process.env.PORT || 3006);
 app.use(cors())
+
+app.locals.card = null;
+
+function setCard(result) {
+  console.log("SETTING", result)
+  app.locals.card = result
+}
+
+const getRandomCard = async () => {
+  const getRandomIndex = array => Math.floor(Math.random() * array.length)
+  try {
+    const results = await pool.query('SELECT * FROM deck')
+    return app.locals.card = results.rows[getRandomIndex(results.rows)];
+  }
+  catch (err) {
+    throw err
+  }
+}
 
 app.get('/', (request, response) => {
   response.status(200).send(`Welcome to the ${app.locals.title}`)
@@ -37,4 +56,15 @@ app.get('/api/v1/results', (request, response) => {
   })
 });
 
-app.listen(app.get('port'), () => {console.log(`${app.locals.title} is running on http://localhost:${app.get('port')}.`)});
+app.get('/api/v1/daily', (request, response) => {
+  let card = app.locals.card
+  response.status(200).send({card})
+});
+
+app.listen(app.get('port'), () => {
+  getRandomCard()
+  console.log(`${app.locals.title} is running on http://localhost:${app.get('port')}.`)
+  setInterval(() => {
+    getRandomCard()
+  }, (1000 * 60 * 60 * 24))
+  });
