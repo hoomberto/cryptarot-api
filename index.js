@@ -8,18 +8,15 @@ app.locals.title = "Book of Thoth API"
 app.set('port', process.env.PORT || 3006);
 app.use(cors())
 
-app.locals.card = null;
+app.locals.daily = null;
+app.locals.hourly = null;
 
-function setCard(result) {
-  console.log("SETTING", result)
-  app.locals.card = result
-}
-
-const getRandomCard = async () => {
+const getRandomCard = async (time) => {
   const getRandomIndex = array => Math.floor(Math.random() * array.length)
   try {
     const results = await pool.query('SELECT * FROM deck')
-    return app.locals.card = results.rows[getRandomIndex(results.rows)];
+    const randomCard = results.rows[getRandomIndex(results.rows)]
+    return (time === "hourly" ) ? app.locals.hourly = randomCard : app.locals.daily = randomCard;
   }
   catch (err) {
     throw err
@@ -57,14 +54,23 @@ app.get('/api/v1/results', (request, response) => {
 });
 
 app.get('/api/v1/daily', (request, response) => {
-  let card = app.locals.card
+  let card = app.locals.daily
+  response.status(200).send({card})
+});
+
+app.get('/api/v1/hourly', (request, response) => {
+  let card = app.locals.hourly
   response.status(200).send({card})
 });
 
 app.listen(app.get('port'), () => {
-  getRandomCard()
   console.log(`${app.locals.title} is running on http://localhost:${app.get('port')}.`)
+  getRandomCard('daily')
+  getRandomCard('hourly')
   setInterval(() => {
-    getRandomCard()
+    getRandomCard('daily')
   }, (1000 * 60 * 60 * 24))
+  setInterval(() => {
+    getRandomCard('hourly')
+  }, (1000 * 60 * 60))
   });
