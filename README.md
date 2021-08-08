@@ -1,6 +1,6 @@
 # CrypTarot / Book of Thoth API
 ## [View The Deployed API Here](https://cryptarot-api.herokuapp.com/api/v1/cards)
-## [My Front-End Repo](https://github.com/hoomberto/cryptarot)
+## [View Front-End Repo for this API](https://github.com/hoomberto/cryptarot)
 ## Overview
 
 This is an API which serves data from Aleister Crowley's Book of Thoth Tarot, providing their names, shorthand names, values, descriptions from the deck, and associated keywords. Constructed using PostgreSQL and Express.js, deployed to Heroku. 
