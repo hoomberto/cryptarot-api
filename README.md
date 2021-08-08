@@ -7,7 +7,7 @@ This is an API which serves data from Aleister Crowley's Book of Thoth Tarot, pr
 
 ## Set Up
 Clone this repo down, and `cd` into it.
-Run `npm install` and ensure that you have postgresql in your `package.json` as a dependency (not sure how to install psql? [Instructions Here](https://blog.timescale.com/blog/how-to-install-psql-on-mac-ubuntu-debian-windows/)
+Run `npm install` and ensure that you have postgresql in your `package.json` as a dependency (not sure how to install psql? [Instructions Here](https://blog.timescale.com/blog/how-to-install-psql-on-mac-ubuntu-debian-windows/))
 
 Run `psql postgres`
 Create a new user and password and give them create database access like:
