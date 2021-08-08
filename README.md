@@ -39,6 +39,9 @@ Run `npm i cors dotenv express pg`
 Go to `config.js` and comment out lines 10 - 13. Make sure that the value of the key `database` in `const config` matches the database name that you gave the database you created earlier.
 Run `npm start`
 ## Endpoints
+
+`https://cryptarot-api.herokuapp.com/` + `endpoint`
+
   |             Endpoint              |              Use             |   Method   |  Required Properties for Request |
   |-----------------------------------|:----------------------------:|:----------:|:--------------------------------:|
   |       `/api/v1/cards`         |      get all cards data      |    GET     |               none               |
