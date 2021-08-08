@@ -41,10 +41,10 @@ Run `npm start`
 ## Endpoints
   |             Endpoint              |              Use             |   Method   |  Required Properties for Request |
   |-----------------------------------|:----------------------------:|:----------:|:--------------------------------:|
-  |       `/api/v1/cards`         |      get all questions       |    GET     |               none               |
-  | `/api/v1/results/` |  get single question by id   |    GET     |               none               |
-  |       `/api/v1/daily`        |      get all past games      |    GET     |               none               |
-  |       `/api/v1/hourly`        |  post new game to the server |    GET    |            none                   |
+  |       `/api/v1/cards`         |      get all cards data      |    GET     |               none               |
+  | `/api/v1/results/` |  get all results data  |    GET     |               none               |
+  |       `/api/v1/daily`        |      get card of the hour      |    GET     |               none               |
+  |       `/api/v1/hourly`        |  get card of the day |    GET    |            none                   |
 
 ## Future Extensions
  - [ ] Add histories and expanded descriptions to each card
